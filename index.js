@@ -31,7 +31,7 @@ function contacts_reducer(state = {contacts:[]}, action) {
 }
 
 // Initialise API
-IPCortex.PBX.Auth.setHost('https://fenton.bpoffice.ipcortex.net')
+IPCortex.PBX.Auth.setHost('https://pabx.hostname')
 IPCortex.PBX.Auth.login().then(() => {
   console.log('login success')
   IPCortex.PBX.startFeed().then(() => {
