@@ -1,0 +1,31 @@
+{
+  "name": "ipcortex-dynamic-contacts-react",
+  "version": "0.0.1",
+  "description": "Dynamic Contact updating with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify --debug --extension=js -o bundle.js index.js & python -m SimpleHTTPServer"
+  },
+  "keywords": [
+    "redux",
+    "react"
+  ],
+  "author": "Ben Gesoff",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "babelify": "~6.1.2",
+    "watchify": "^3.3.1"
+  }
+}
